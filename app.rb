@@ -11,7 +11,7 @@ class App < Sinatra::Base
 
     @analyzed_text = TextAnalyzer.new(params[:user_text])
 
-    # erb :results
-    "#{@analyzed_text.to_s}"
+    erb :results
+    
   end
 end
